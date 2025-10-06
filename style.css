@@ -1,0 +1,148 @@
+/* General Layout and Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Script Added Box (Placeholder) */
+.script-added-box {
+    border: 1px solid #007bff; /* Blue border to stand out */
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #e9f5ff;
+    border-radius: 4px;
+}
+
+.script-added-box p strong {
+    color: #0056b3;
+    font-size: 1.1em;
+}
+
+.script-added-box label {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.script-added-box input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.script-added-box .submit-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.script-added-box .submit-button:hover {
+    background-color: #5a6268;
+}
+
+/* Consent Boxes */
+.consent-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex; 
+    align-items: flex-start;
+}
+
+.consent-box input[type="checkbox"] {
+    flex-shrink: 0; /* Prevents checkbox from shrinking */
+    margin-right: 10px;
+    margin-top: 5px; 
+}
+
+.consent-box label {
+    font-weight: normal;
+    display: block; 
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Main Submit Button */
+button[type="submit"] {
+    background-color: #28a745; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Thank You Message Styling (For JS to use) */
+#thankYouMessage {
+    text-align: center;
+    padding: 30px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    display: none; /* Hidden by default */
+}
+
+#thankYouMessage strong {
+    font-size: 1.5em;
+    display: block;
+    margin-top: 10px;
+    color: #004085;
+}
