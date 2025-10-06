@@ -3,12 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thank You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cinzel:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Marcellus', serif;
+        }
+
+        .header {
+            background-color: #12283A;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 20px auto 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-weight: 200;
+            font-size: 38px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .phone {
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .thank-you-message {
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #2c2c2c;
+            margin-bottom: 20px;
+        }
+
+        #finResult {
+            font-weight: 700;
+            color: #12283A;
+        }
+
+        /* 📱 Mobile Devices */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .phone {
+                font-size: 18px;
+            }
+
+            .thank-you-container {
+                padding: 60px 15px;
+            }
+
+            .thank-you-message {
+                font-size: 26px;
+            }
+        }
+
+        /* 📱 Small Mobile (below 480px) */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 24px;
+            }
+
+            .phone {
+                font-size: 16px;
+            }
+
+            .thank-you-message {
+                font-size: 22px;
+            }
+
+            .thank-you-container {
+                padding: 50px 10px;
+            }
+        }
+
+        /* 💻 Large Screens */
+        @media (min-width: 1200px) {
+            .header {
+                max-width: 90%;
+            }
+            .thank-you-message {
+                font-size: 42px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>
-        Thank you for filling up the details. Your FIN is : <span id="finResult">$0</span>
+    <div class="header">
+        <div class="logo">DAN MOORE</div>
+        <div class="phone">📞 (310) 741 - 1988</div>
     </div>
+
+    <div class="thank-you-container">
+        <div class="thank-you-message">
+            Thank you for filling up the details. Your FIN is: <span id="finResult">$0</span>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
