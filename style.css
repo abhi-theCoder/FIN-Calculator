@@ -106,3 +106,19 @@ body {
         font-size: 42px;
     }
 }
+
+.schedule-btn{
+    font-size: larger;
+    background-color: #12283A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-decoration: none;
+}
